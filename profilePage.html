@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <script src="formLogic.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1><a href="index.html">Home</a></h1>
@@ -21,7 +22,17 @@
             <input type="checkbox" name="" id="seeking">
             <label for="seeking">Seeking</label>
         </fieldset>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
+        <button id="cancelChange" type="button">Cancel</button>
     </form>
+    <!-- hidden until form submit, show always if user already used form -->
+    <div id="profileDisplay" class="">
+        <p id="nameDisplay">Name:</p>
+        <p id="careerDisplay">Career:</p>
+        <p id="offeringDisplay">Offering:</p>
+        <p id="seekingDisplay">Seeking:</p>
+    </div>
+    <!-- hidden if form is visible and vice versa -->
+    <button id="editInfo">Edit info</button>
 </body>
 </html>
