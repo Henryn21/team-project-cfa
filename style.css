@@ -1,3 +1,6 @@
 .hidden{
     display: none;
 }
+.teal{
+    color: rgb(1, 150, 150);
+}
