@@ -2,5 +2,24 @@
     display: none;
 }
 .teal{
-    color: rgb(1, 150, 150);
+    color: rgb(0, 177, 177);
+}
+.white{
+    color: white;
+}
+.mainContent{
+    padding-top: 80px;
+}
+#myFooter{
+    background-color: rgb(114, 114, 114);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center; 
+}
+.nav-link:hover{
+    background-color: white;
+    text-decoration: none;
+    color: black;
 }

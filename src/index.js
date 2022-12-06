@@ -71,7 +71,7 @@ let displayProfile=(userInfo)=>{
 }
 profileForm.addEventListener("submit", takeInfo);
 let editInfo= document.querySelector("#editInfo");
-let formIsVisible=true;
+let formIsVisible=false;
 
 //toggle visibility: hide/show form and hide/show edit button
 let toggleForm=()=>{
@@ -156,11 +156,11 @@ onAuthStateChanged(auth, (user) => {
   }
 });
 
-//logs current user
-let whoAmI=()=>{
-    console.log(getAuth().currentUser.displayName);
-}
-let whoAmIButton=document.querySelector("#whoAmI");
-whoAmIButton.addEventListener("click", ()=>{whoAmI()});
+// //logs current user
+// let whoAmI=()=>{
+//     console.log(getAuth().currentUser.displayName);
+// }
+// let whoAmIButton=document.querySelector("#whoAmI");
+// whoAmIButton.addEventListener("click", ()=>{whoAmI()});
 
 //pull info
