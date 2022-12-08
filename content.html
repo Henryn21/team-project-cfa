@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Comment Indentation</title>
+    <link rel="stylesheet" href="./content.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="comment__container opened" id="first-comment">
+        <div class="comment__card">
+          <h3 class="comment__title">The first post</h3>
+          <p>
+            how to secure your first internship as a college students 
+          </p>
+          <div class="comment__card-footer">
+            <div>Upvote</div>
+            <div class="show-replies">reply</div>
+          </div>
+        </div>
+        <div
+          class="comment__container"
+          dataset="first-comment"
+          id="first-reply"
+        >
+          <div class="comment__card">
+            <h3 class="comment__title">reply</h3>
+            <p>
+              first internship experience like for a college students 
+            </p>
+            <div class="comment__card-footer">
+              <div>Upvote</div>
+              <div class="show-replies">Reply 1</div>
+            </div>
+          </div>
+          <div
+            class="comment__container"
+            dataset="first-reply"
+            id="first-first-reply"
+          >
+            <div class="comment__card">
+              <h3 class="comment__title">reply</h3>
+              <p>
+                list of the internship you can apply to as a college students 
+              </p>
+              <div class="comment__card-footer">
+                <div>Upvote</div>
+                <div class="show-replies">Reply 1</div>
+              </div>
+            </div>
+            <div class="comment__container" dataset="first-first-reply">
+              <div class="comment__card">
+                <h3 class="comment__title">
+                  reply
+                </h3>
+                <p>
+                  Please share your own experience as an intern
+                </p>
+                <div class="comment__card-footer">
+                  <div>Upvote</div>
+                  <div class="show-replies">Reply 0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="comment__container" dataset="first-comment">
+          <div class="comment__card">
+            <h3 class="comment__title">reply</h3>
+            <p>
+              what kind of quesitns do you have for us 
+            </p>
+            <div class="comment__card-footer">
+              <div>Upvote</div>
+              <div class="show-replies">Reply 0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./content.js"></script>
+  </body>
+</html>
